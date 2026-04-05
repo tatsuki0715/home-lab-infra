@@ -1,0 +1,54 @@
+4/5 
+
+自宅ラボ：Web-DB構成（MySQL接続検証）
+
+概要
+２台の仮想マシン（VM)を用いて、アプリケーションサーバーからデータベースサーバーへ接続する構成を構築した。
+
+構成
+・VM1（Web/App)
+・Vm2(DB:MySQL)
+
+ネットワーク
+・VM1　192.168.122.167
+・VM2  192.168.122.49
+・同一ネットワーク内で疎通確認（ping成功）
+
+実施内容
+1.DBサーバー構築（VM2)
+・MySQLインストール
+・bind-adressを0.0.0.0に変更（外部接続許可）
+・ユーザー作成
+
+CREATE USER 'appuser'@'%' IDENTIFIED BY 'password';
+PRIVILEGES ON *.*TO 'appuser'@%';
+
+2.データベース作成
+
+CREATE DATABASE appdb;
+USE appdb;
+
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50)
+);
+
+3.アプリ側から接続
+
+mysql　-h 192.168.122.167 -u appuser -p
+
+4.動作確認
+
+INSERT INTO users (name) VALUES ('test');
+SELECT * FROM users;
+
+学んだこと
+・MySQLの外部角に接続設定
+・ユーザ認証とhost指定の基本（ping)
+・DB選択（USE)の必要性
+
+課題・今後
+・Webサーバーと連携(Apache/Nginx)
+・Docker化
+・セキュリティ設定強化（ポート制限など）
+
