@@ -21,7 +21,14 @@ Ubuntu Server構築
 インフラエンジニアとしての基礎力を身につける
 
 
+## 2026/07/23
 
+### Apache
+
+- DocumentRoot作成
+- index.html配置
+- Apache設定確認
+- Webページ公開
 
 
 
