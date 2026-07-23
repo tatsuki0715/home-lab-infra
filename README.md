@@ -31,4 +31,18 @@ Ubuntu Server構築
 - Webページ公開
 
 
+## 202607/23
+
+## 課題3:Apacheログ調査
+
+### 学んだこと
+- access.logはアクセス履歴を確認するためのログ
+- error.logはApacheのエラーを確認するためのログ
+- tail -fでリアルタイム監視ができる
+- curlで簡単に動作確認ができる
+
+### 使用したコマンド
+- tail -f
+- curl
+- ls -l
 
