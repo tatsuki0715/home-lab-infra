@@ -46,3 +46,24 @@ Ubuntu Server構築
 - curl
 - ls -l
 
+
+##  課題4-1:MySQLサーバー構築
+
+### 学んだこと
+- MySQLをインストールした
+- サービスの起動状態を確認した
+- データベースを作成した
+- テーブルを作成した
+- データを登録・確認した
+
+### 使用コマンド
+- apt update
+- apt install mysql-server
+- systemctl status
+- systemctl enable
+- mysql
+- CREATE DATABASE 
+- CREATE TABLE
+- INSERT
+- SELECT
+
