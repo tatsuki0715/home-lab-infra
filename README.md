@@ -67,3 +67,19 @@ Ubuntu Server構築
 - INSERT
 - SELECT
 
+
+#課題4-2:MySQL外部接続
+
+### 学んだこと
+- bind-addressを変更して外部接続を許可した
+- 接続専用ユーザーを作成した
+- GRANTで権限を付与した
+- VM1からVM2へ接続できることを確認した
+
+### 使用したコマンド
+- hostname -I
+- systemctl restart 
+- CREATE USER
+- GRANT 
+- FLUSH PRIVILEGES
+- mysql -h
