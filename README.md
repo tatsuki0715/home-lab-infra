@@ -83,3 +83,19 @@ Ubuntu Server構築
 - GRANT 
 - FLUSH PRIVILEGES
 - mysql -h
+
+2026/07/28
+
+# 課題6　ユーザー・グループ・権限管理
+
+## 学んだこと
+- ユーザー作成の仕方
+- ユーザーをグループに追加する方法
+- 権限変更の仕方
+
+## 使用したコマンド
+- sudo adduser <ユーザー名>
+- groups <ユーザー名＞
+- sudo usermod -aG www-data <ユーザー名＞
+- touch /etc/test
+
