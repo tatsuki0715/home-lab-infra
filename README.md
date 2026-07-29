@@ -99,3 +99,21 @@ Ubuntu Server構築
 - sudo usermod -aG www-data <ユーザー名＞
 - touch /etc/test
 
+2026/07/29
+
+# 課題7　SSH公開鍵認証の構築
+
+## 学んだこと
+- SSHサーバーの構築
+- 公開鍵暗号方式
+- authorized_keysの役割
+- sshd_configの基本
+- .ssh/configの便利な使い方
+
+### 使用したコマンド
+
+- ssh-keygen -t ed_25519
+- ssh-copy-id <相手のユーザー名＞＠＜相手のIPアドレス＞
+- ssh <相手のユーザー名＞＠＜相手のIPアドレス＞
+- vim ~/.ssh/config
+
